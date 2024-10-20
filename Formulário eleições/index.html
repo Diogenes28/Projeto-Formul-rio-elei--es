@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre Eleições no Brasil 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pesquisa sobre Eleições no Brasil 2024</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <h2>Participe da nossa pesquisa</h2>
+                <form id="survey-form">
+
+                    <label for="age-group">Qual é a sua faixa etária?</label>
+                    <select id="age-group" name="age-group" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="18-24">18-24 anos</option>
+                        <option value="25-34">25-34 anos</option>
+                        <option value="35-44">35-44 anos</option>
+                        <option value="45-54">45-54 anos</option>
+                        <option value="55+">55 anos ou mais</option>
+                    </select>
+
+                    <!-- Pergunta 1 -->
+                    <label>1. Você conhece os candidatos às eleições de 2024?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Sim
+                                <input type="radio" name="know-candidates" value="yes" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não
+                                <input type="radio" name="know-candidates" value="no">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <label>2. Qual é a sua principal fonte de informação sobre os candidatos?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Mídia tradicional
+                                <input type="radio" name="information-source" value="media" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Redes sociais
+                                <input type="radio" name="information-source" value="social-media">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Amigos e familiares
+                                <input type="radio" name="information-source" value="friends-family">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Outro
+                                <input type="radio" name="information-source" value="other">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <label>3. Você acha que a mídia tem um viés político?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Sim
+                                <input type="radio" name="media-bias" value="yes" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não
+                                <input type="radio" name="media-bias" value="no">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não tenho certeza
+                                <input type="radio" name="media-bias" value="unsure">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <label>4. Você participa ativamente de debates políticos online?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Sim
+                                <input type="radio" name="participate-debates" value="yes" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não
+                                <input type="radio" name="participate-debates" value="no">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <label>5. Qual é a sua principal preocupação em relação às eleições?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Corrupção
+                                <input type="radio" name="main-concern" value="corruption" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Segurança
+                                <input type="radio" name="main-concern" value="security">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Economia
+                                <input type="radio" name="main-concern" value="economy">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Educação
+                                <input type="radio" name="main-concern" value="education">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Outro
+                                <input type="radio" name="main-concern" value="other">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 6 -->
+                    <label>6. Você acredita que as redes sociais influenciam a opinião pública?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Sim
+                                <input type="radio" name="social-media-influence" value="yes" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não
+                                <input type="radio" name="social-media-influence" value="no">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 7 -->
+                    <label>7. Qual o grau de confiança que você tem nas urnas eletrônicas?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Alta
+                                <input type="radio" name="trust-urns" value="high" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Média
+                                <input type="radio" name="trust-urns" value="medium">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Baixa
+                                <input type="radio" name="trust-urns" value="low">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 8 -->
+                    <label>8. Você se sente representado pelos candidatos disponíveis?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Sim
+                                <input type="radio" name="feel-represented" value="yes" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não
+                                <input type="radio" name="feel-represented" value="no">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Não tenho certeza
+                                <input type="radio" name="feel-represented" value="unsure">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 9 -->
+                    <label>9. Com que frequência você acompanha notícias políticas?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Diariamente
+                                <input type="radio" name="news-frequency" value="daily" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Semanalmente
+                                <input type="radio" name="news-frequency" value="weekly">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Mensalmente
+                                <input type="radio" name="news-frequency" value="monthly">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Raramente
+                                <input type="radio" name="news-frequency" value="rarely">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 10 -->
+                    <label>10. Qual é a sua expectativa em relação às eleições de 2024?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <label>
+                                Alta
+                                <input type="radio" name="election-expectation" value="high" required>
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Média
+                                <input type="radio" name="election-expectation" value="medium">
+                            </label>
+                        </div>
+                        <div class="radio-option">
+                            <label>
+                                Baixa
+                                <input type="radio" name="election-expectation" value="low">
+                            </label>
+                        </div>
+                    </div>
+
+                    <label>Onde você costuma obter informações sobre eleições?</label>
+                    <select id="info-source" name="info-source" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="tv">Televisão</option>
+                        <option value="internet">Internet</option>
+                        <option value="jornais">Jornais</option>
+                        <option value="redes-sociais">Redes Sociais</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                    <p id="form-feedback"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pesquisa Eleitoral <div id="copyright">
+            👨🏻‍💻 Desenvolvido por <a href="https://github.com/Diogenes28" target="_blank" style="color: rgb(232, 223, 55);">Diógenes28</a> estudante de Análise e Desenvolvimento de Sistemas 👨🏻‍🎓
+        </div></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

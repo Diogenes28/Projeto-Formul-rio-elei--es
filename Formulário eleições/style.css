@@ -1,0 +1,151 @@
+/* Reset básico */
+body, h1, h2, p, label, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #004d00, #f4c542); /* Gradiente de verde e amarelo */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg,#f4c542, #004d00);
+    color: #301079;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-section {
+    background: linear-gradient(135deg,#84b3d5, #0533a8);
+    padding: 2rem;
+    margin: auto;
+    max-width: 800px; /* Aumentado para acomodar mais perguntas */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+h1, h2 {
+    color: #004d00; /* Verde escuro */
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin: 1rem 0;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center; /* Alinha o botão de rádio e o texto verticalmente */
+    margin-bottom: 0.5rem; /* Espaçamento entre as opções */
+}
+
+.radio-option label {
+    display: flex;
+    align-items: center; /* Alinha o botão de rádio e o texto verticalmente */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    margin-left: 0.75rem; /* Espaço entre o texto e o botão de rádio */
+    accent-color: #004d00; /* Cor do botão de rádio (verde escuro) */
+    /* Alternativa para navegadores que não suportam accent-color */
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid #004d00;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-option input[type="radio"]:checked {
+    accent-color: #004dff; /* Azul para o botão de rádio selecionado */
+}
+
+.radio-option input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #ffffff; /* Azul para o botão de rádio selecionado */
+    border-radius: 50%;
+}
+
+.radio-option input[type="radio"]:focus {
+    outline: 2px solid #4CAF50; /* Cor de destaque para foco */
+    outline-offset: 2px;
+}
+
+button {
+    background: #0b31f0; /* Verde claro */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f0ad4e; /* Verde um pouco mais escuro */
+}
+
+#form-feedback {
+    margin-top: 1rem;
+    color: #f0ad4e; /* Amarelo */
+}
+
+footer {
+    background: #004d00; /* Verde escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        padding: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
